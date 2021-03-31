@@ -1,0 +1,108 @@
+
+*{
+    text-align: center;
+
+}
+
+@media all and (max-width:760px){
+    #a{grid-area: a;}
+    aside{grid-area: aside;}
+    .c{grid-area: c;}
+    .d{grid-area: d;}
+    .e{grid-area: e;}
+    .f{grid-area: f;}
+    .g{grid-area: g;}
+    .h{grid-area: h;}
+    #i{grid-area: i;}
+    body{
+        gap: 2px;
+        width: 95%;
+        background-color: rgb(10, 12, 12);
+        margin: 10px auto 10px auto;
+        display: grid;
+        color: gold;
+        
+        grid-template-rows: 20.833vw 41.67vw 34.733vw 34.733vw 66.673vw 66.672vw 22.230vw;
+        grid-template-columns: 50% 50% ;
+        grid-template-areas: 
+        "a a"
+        "aside aside"
+        "c c"
+        "d d"
+        "e f"
+        "g h"
+        "i i"
+        ;
+    }
+
+    #a,aside,.c,.d,.e,.f,.g,.h,#i{
+        display: grid;
+        align-items: center;
+        background-color: rgb(221, 25, 25);
+    }
+}
+
+
+@media all and (min-width:768px){
+    #a{grid-area: a;}
+    aside{grid-area: aside;}
+    .c{grid-area: c;}
+    .d{grid-area: d;}
+    .e{grid-area: e;}
+    .f{grid-area: f;}
+    .g{grid-area: g;}
+    .h{grid-area: h;}
+    #i{grid-area: i;}
+    body{
+        gap: 2px;
+        width: 95%;
+        background-color: aqua;
+        margin: 10px auto 10px auto;
+        display: grid;
+        color: black;
+        grid-template-rows: 20.836vw 41.68vw 34.726vw 34.726vw 66.672vw 66.673vw 22.225vw;
+        grid-template-columns: 50% 50% ;
+        grid-template-areas: 
+        "a a"
+        "aside aside"
+        "c c"
+        "d d"
+        "e f"
+        "g h"
+        "i i"
+        ;
+    }
+
+    #a,aside,.c,.d,.e,.f,.g,.h,#i{
+
+        align-items: center;
+        background-color: rgb(46, 170, 164);
+    }
+}
+
+
+@media all and (min-width:1200px){
+
+    body{
+        width: 1000px;
+        background-color: rgb(103, 28, 146);
+        color: blue;
+        grid-template-rows: 6.51041667vw 13.020834vw 16.276043vw 9.76564vw;
+        grid-template-columns: 20% 20% 20% 20% 20% ;
+        grid-template-areas: 
+        "a a a a a"
+        "aside c c d d"
+        "aside e f g h"
+        "aside i i i i"
+        ;
+    }
+
+    #a,aside,.c,.d,.e,.f,.g,.h,#i{
+        background-color: rgb(0, 0, 0);
+        display: grid;
+        align-items: center;
+    }
+    p{
+        width: 100%;
+    }
+}
